@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0f2b2b, #020617 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.name {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    color: #3cff90;
+    font-weight: bold;
+    font-size: 40px;
+}
+.maindiv h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    text-align: center;
+}
+.maindiv h1 span {
+    color: #3cff90;
+}
+.subtitle {
+    color: #b6c6d6;
+    margin-bottom: 17px;
+    text-align: center;
+}
+.card, .quiz-box {
+    background: rgba(20, 30, 50, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card {
+    padding: 60px;
+    width: 850px;
+    text-align: left;
+}
+.card label {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin: 15px 0 6px;
+    display: block;
+}
+.card input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 19px;
+    border: 2px solid transparent;
+    background: #000;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+.card input:focus {
+    border: 0.5px solid #3cff90;
+    box-shadow: 0 0 5px #3cff90;
+}
+.quiz-box {
+    width: 850px;
+    padding: 50px;
+    margin-top: 100px;
+}
+h2 {
+    text-align: center;
+    color: #3cff90;
+    margin-bottom: 25px;
+}
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+.quiz-box label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #020617;
+    padding: 16px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+    margin-bottom: 0px;
+}
+.quiz-box label:has(input[type="radio"]:checked) {
+    border: 1.5px solid #3cff90 !important;
+    background: rgba(60, 255, 144, 0.05);
+}
+input[type="radio"] {
+    accent-color: #3cff90;
+    transform: scale(1.2);
+}
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: #3cff90;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+button:hover {
+    background: #2be37b;
+    transform: scale(1.03);
+}
+#result, #score {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 22px;
+    color: #3cff90;
+}
+
+p {
+    margin: 18px 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
